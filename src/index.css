@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+  
+  --color-slate-custom: #373a46;
+}
+
+@layer base {
+  body {
+    @apply font-geist antialiased bg-white text-black;
+  }
+}
+
+.inner-shadow-button {
+  box-shadow: inset -4px -6px 25px 0px rgba(201, 201, 201, 0.08), 
+              inset 4px 4px 10px 0px rgba(29, 29, 29, 0.24);
+}
+
+.input-soft-shadow {
+  box-shadow: 0px 10px 40px 5px rgba(194,194,194,0.25);
+}
